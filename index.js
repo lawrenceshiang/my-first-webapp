@@ -43,6 +43,11 @@ const PORT = process.env.PORT || 4000;
 var usersRouter = require("./routes/userRoute");
 app.use("/user", usersRouter);
 
+// /user/register - registration form page
+app.get("/register", (req, res) => {
+  return res.render("register")
+});
+
 app.get("/", (req, res) => {
   // check if user is logged in, by checking cookie
   let username = req.cookies.username;
