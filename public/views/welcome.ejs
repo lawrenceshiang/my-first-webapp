@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/w3.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0" />
+    <title>Welcome</title>
+</head>
+
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-black">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-right">Sign out</a>
+            <a class="w3-bar-item w3-right"><%=username%></a>
+        </div>
+    </div>
+    <div class="login-card-container">
+        <div class="login-card">
+            <div class="login-card-logo">
+                <img src="/img/logo.png" alt="logo">
+            </div>
+            <div class="login-card-header">
+                <h1>Hi <%=username%>, you are welcome here</h1>
+                <!--<h1 id="welcomename2"></h1>-->
+                <h1 id="score"></h1>
+            </div>
+            <input type="text" placeholder="Enter Score" id="scoreForm" autofocus required>
+            <!--<div id="button_container">
+                <button onclick="submitscore()">Submit score</button>
+                <button onclick="Add()">Add something</button>
+                <button onclick="Remove()">Remove something</button>
+            </div>-->
+            <h1 id="something"></h1>
+        </div>
+    </div>
+</body>
+<!--
+<script src="dist/index.js" type="module"></script>
+<script src="dist/welcome.js" type="module"></script>
+-->
+</html>
