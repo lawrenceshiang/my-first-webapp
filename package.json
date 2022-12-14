@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "start": "snowpack dev",
+    "start": "nodemon index.js",
     "build": "snowpack build",
     "test": "ts-mocha tests/**/*.test.ts",
-    "dev": "nodemon index.js"
+    "dev": "snowpack dev"
   },
   "dependencies": {
     "body-parser": "^1.20.1",
